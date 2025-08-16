@@ -1,0 +1,13 @@
+name = "maas_tutorial"
+uuid = "6ea3a744-037a-4913-a2c5-9ead90859778"
+authors = ["bingyenufe <121657961@163.com> and contributors"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1.11"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
