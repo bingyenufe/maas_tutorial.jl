@@ -1,6 +1,10 @@
 using maas_tutorial
 using Test
 
-@testset "maas_tutorial.jl" begin
-    # Write your tests here.
+SlowSum(a₁,Δ,n) = sum([a₁+Δ*i for i ∈ 0:n])
+
+@testset "ArithmeticSum" begin
+    @test ArithmeticSum(1,1,14) == SlowSum(1,1,14)
+    @test ArithmeticSum(5,1,10) == SlowSum(5,1,10)
+    @test ArithmeticSum(2,3,14) == SlowSum(2,3,14)
 end
